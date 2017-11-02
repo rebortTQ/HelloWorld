@@ -1,0 +1,14 @@
+linux:
+	1.生成密钥对(提示输入密码：密码是github用户的密码)
+		ssh-keygen -C "rebortTQ852748675@qq.com" -f ~/.ssh/github	
+	2.确认ssh-agent处于启用状态
+		eval "$(ssh-agent -s)"  （输出类似 Agent pid 3167 即已启用）
+	3.添加私钥到认证组中（提示输入密码：密码是第一步输入的密码）
+		ssh-add ~/.ssh/github
+	4.ssh连接github
+		ssh -T git@github.com
+
+
+github-command:
+	1.下载项目到本地
+		git clone git@github.com:rebortTQ/HelloWorld.git
