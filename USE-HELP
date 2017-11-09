@@ -31,6 +31,10 @@ error:
 	1.一般第一次提交时可能会出现 Perhaps you should specify a branch such as 'master'的错误
 		git push origin master
 
+update:
+	1. # git add your-changed-filename
+	2. # git commit -m "some msg"
+	3. # git push
 
 upload-linux-project:
 	1.login your github-web and New repository
